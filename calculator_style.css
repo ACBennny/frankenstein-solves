@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/*************************************************************************************************************
+ * A calculator that will solve simple math problems for grade 4, 5 and 6
+ * This the stylesheet of the calculator
+ *
+ * @author (Anyanwu Benedict Chukwuemeka)
+ * @version (ver 1)
+ ************************************************************************************************************/
+ 
+ 
+ #main
+ {
+     -fx-pref-width: 400px;
+     -fx-pref-height: 600px;
+     -fx-max-width: 400px;
+     -fx-max-height: 600px;
+     -fx-min-width: 400px;
+     -fx-min-height: 600px;
+     -fx-background-color: #14a2df;
+     -fx-padding: 10px;
+ }
+ 
+ 
+ #base
+ {
+     -fx-pref-width: 400px;
+     -fx-pref-height: 600px;
+     -fx-max-width: 400px;
+     -fx-max-height: 600px;
+     -fx-min-width: 400px;
+     -fx-min-height: 600px;
+     -fx-spacing: 10px;
+     -fx-padding: 10px;
+ }
+ 
+ 
+ 
+ /***************
+ * Calculator Branding
+ ****************/
+ 
+ #brandBox
+ {
+     -fx-padding: 10px;
+     -fx-spacing: 10px;
+ }
+ 
+ 
+ #brandLogo
+ {
+     -fx-pref-width: 100px;
+     -fx-pref-height: 100px;
+     -fx-max-width: 100px;
+     -fx-max-height: 100px;
+     -fx-min-width: 100px;
+     -fx-min-height: 100px;
+     -fx-background-image: url(image/calcBrandLogo.gif);
+     -fx-background-size: contain;
+     -fx-background-repeat: no-repeat;
+     -fx-backgroung-position: center;
+ }
+ 
+ #brandName
+ {
+     -fx-spacing: 2px;
+ }
+ 
+ 
+ #brandName #calcName
+ {
+     -fx-font-family: 'Roboto' , sans-serif;
+     -fx-text-fill: #ffffff;
+     -fx-font-size: 22px;
+     -fx-font-weight: 1700;
+ }
+ 
+ #brandName #version
+ {
+     -fx-font-family: 'Poppins' , sans-serif;
+     -fx-text-fill: #ffffff;
+     -fx-font-size: 14px;
+ }
+ 
+ #brandName .creatorName
+ {
+     -fx-font-family: 'Poppins' , sans-serif;
+     -fx-text-fill: #ffffff;
+     -fx-font-size: 15px;
+     -fx-border-width: 0 0 1px 0;
+     -fx-border-color: #ffffff;
+ }
+ 
+ 
+ 
+ 
+ /***************
+ * Calculator Display
+ ****************/
+ 
+ .screenBox
+ {
+     -fx-pref-width: 380px;
+     -fx-pref-height: 120px;
+     -fx-max-width: 380px;
+     -fx-max-height: 120px;
+     -fx-min-width: 380px;
+     -fx-min-height: 120px;
+     -fx-padding: 10px;
+     -fx-spacing: 10px;
+     -fx-background-color: #ffffff;
+     -fx-background-radius: 8px;
+     -fx-border-width: 1px;
+     -fx-border-color: #000000;
+     -fx-border-radius: 8px;
+ }
+ 
+ .screenBox Label
+ {
+     -fx-font-family: 'Roboto' , sans-serif;
+     -fx-min-width: 350px;
+     -fx-font-size: 20px;
+     -fx-font-weight: 900;
+ }
+ 
+ .screenBox .ioLines
+ {
+     -fx-text-fill: #000000;
+     -fx-alignment: center-right;
+ }
+ 
+ .screenBox #errorLine
+ {
+     -fx-text-fill: #df3d14;
+     -fx-alignment: center;
+ }
+ 
+ 
+ 
+ 
+ /***************
+ * Calculator Radio Buttons
+ ****************/
+ 
+ 
+ .mathGradeBox
+ {
+     -fx-min-width: 350px;
+     -fx-spacing: 15px;
+     -fx-padding: 5px 10px;
+ }
+ 
+ 
+ .mathGradeBox RadioButton
+ {
+     -fx-font-family: 'Poppins' , sans-serif;
+     -fx-font-size: 12px;
+     -fx-font-weight: 400;
+     -fx-text-fill: #ffffff;
+ }
+ 
+ 
+ 
+ /***************
+ * Calculator Operating Buttons
+ ****************/
+ 
+ 
+ .calcButtonsBox
+ {
+     -fx-min-width: 350px;
+     -fx-vgap: 10px;
+     -fx-hgap: 10px;
+     -fx-padding: 10px;
+ }
+ 
+ .calcButtonsBox Button
+ {
+     -fx-pref-width: 80px;
+     -fx-pref-height: 50px;
+     -fx-max-width: 80px;
+     -fx-max-height: 50px;
+     -fx-min-width: 80px;
+     -fx-min-height: 50px;
+     -fx-background-color: #b1dff6;
+     -fx-background-radius: 5px;
+     -fx-border-width: 1px;
+     -fx-border-color: #000000;
+     -fx-border-radius: 5px;
+     -fx-font-family: 'Poppins' , sans-serif;
+     -fx-font-size: 17px;
+     -fx-font-weight: 700;
+     -fx-text-fill: #000000;
+     -fx-cursor: hand;
+ }
+ 
+ .calcButtonsBox Button#buttonClear
+ {
+     -fx-background-color: #ed1b1b;
+ }
+ 
+ .calcButtonsBox Button#buttonSolve
+ {
+     -fx-background-color: #f47921;
+ }
+ 
+ .calcButtonsBox Button:hover
+ {
+    -fx-background-color: #77ccf7;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

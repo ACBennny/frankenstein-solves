@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Calculator
+comment0.text=\r\n\ A\ calculator\ that\ will\ solve\ simple\ math\ problems\ for\ grade\ 4,\ 5\ and\ 6\r\n\ This\ is\ the\ main\ class\r\n\r\n\ @author\ (Anyanwu\ Benedict\ Chukwuemeka)\r\n\ @version\ (ver\ 1)\r\n
+comment1.params=stage
+comment1.target=void\ start(javafx.stage.Stage)
+comment1.text=\r\n\ \ Start\ Method\r\n\ \ Creates\ the\ stage\ and\ initialises\ the\ calculator\r\n
+comment2.params=event
+comment2.target=void\ inputToScreen(javafx.event.ActionEvent)
+comment2.text=\r\n\ name\:\ inputToScreen\r\n\ function\:\ listens\ to\ mouse\ click\ events\ and\ displays\ \r\n\ the\ text\ of\ the\ button\ clicked\r\n\ \r\n
+comment3.params=
+comment3.target=void\ clearTheScreen()
+comment3.text=\r\n\ name\:\ clearTheScreen\r\n\ function\:\ clears\ all\ text\ on\ the\ screen\r\n\ \r\n
+comment4.params=
+comment4.target=void\ solveOperation()
+comment4.text=\r\n\ name\:\ solveOperation\r\n\ function\:\ solves\ the\ given\ operation\ on\ screen\r\n\ \r\n
+numComments=5
